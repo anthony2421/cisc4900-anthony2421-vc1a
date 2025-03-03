@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pathfinder </title>
+        <style>
+            h1 { /*Header*/
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 36px;
+                color: rgb(20,20,20);
+                text-align: center;
+                font-weight: bold;
+            }
+            p{ /*Center text*/
+                text-align: center;
+                font-size: 24px;
+                color:rgb(0, 0, 0);
+            }
+            p1{ /*text above Search bar*/
+                text-align: center;
+                font-size: 24px;
+                color:black;
+                padding-top: 50px;
+            }
+            .image-container{ /*image size*/
+                text-align: center;
+                align-items: center;
+                margin-top: 25px;
+            }
+            .main-image { /*main image*/
+                text-align: center;
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .my-image{ /*other image size*/
+                padding-left: 250px;
+                text-align:right;
+                width: 100%;
+                max-width: 500px;
+                height: 500px;
+            }
+            .text-overlay { /*Text ontop of image*/
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+                padding: 10px;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .search-container{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50px;
+            }
+            .search-bar{
+                width: 300px;
+                padding: 10px;
+                font-size: 20px;
+                border-radius: 25px;
+                outline: none;
+                text-align: center;
+            }
+            .bottom-black-box { /*Bottom black box for legal inquiries*/
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> PathFinder </h1>
+        <p> Here you will find the compiled Majors and Minors of the current CUNYs (soon to be expanded)! </p>
+
+        <div class="image-container">
+            <img src="https://tinyurl.com/4yyw3trh" alt="Brooklyn college" class="main-image">
+            <div class="text-overlay"> PathFinder </div>
+        </div>
+
+        <p> Enter your County to get started </p>
+        <div class="search-container">
+            <form action="SQL" method="get">
+                <input type="text" class="search-bar" placeholder="Name of the county (WIP)" name="WIP" query="WIP">
+            </form>
+        </div>
+        <p>Look up by college or university by name instead <br> The above line will be switchable with the search bar</p>
+
+        <p1> Degree map link for Brooklyn College - <a href="https://pub.brooklyn.edu//DegreeMaps/stdnt_degree_maps_list.jsp" target="_blank">https://pub.brooklyn.edu//DegreeMaps/stdn_view_degree_map.jsp</a></p1>
+        <img src="https://img001.prntscr.com/file/img001/zRNlIi1YQhuENwr-Xk-kfQ.png" alt="Degree Map for Computer Science @ Brooklyn College" class="my-image">
+
+        <div class="black-box">
+            <p style="color: white; text-align: center; padding: 10px;"> Help - Site Guidelines - etc (all the other legal stuff)</p>
+        </div>
+    </body>
+</html>

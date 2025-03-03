@@ -12,3 +12,15 @@
 *.zip
 *.tar.gz
 *.rar
+
+# Web files
+*.html
+*.css
+*.jpg
+*.png
+*.pdg
+*.ppt
+
+# Database files
+
+# Etc files

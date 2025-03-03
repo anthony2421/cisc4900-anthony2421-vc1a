@@ -56,19 +56,19 @@
                 margin-top: 50px;
             }
             .search-container{
-                margin-left: auto;
                 margin-right: auto;
-                width: 50px;
+                margin-left: auto;
+                width: 500px;
+                text-align: center;
             }
             .search-bar{
-                width: 300px;
+                width: 100%;
                 padding: 10px;
                 font-size: 20px;
                 border-radius: 25px;
                 outline: none;
-                text-align: center;
             }
-            .bottom-black-box { /*Bottom black box for legal inquiries*/
+            .black-box { /*Bottom black box for legal inquiries*/
                 background-color: black;
                 color: white;
                 text-align: center;
@@ -93,7 +93,8 @@
         </div>
         <p>Look up by college or university by name instead <br> The above line will be switchable with the search bar</p>
 
-        <p1> Degree map link for Brooklyn College - <a href="https://pub.brooklyn.edu//DegreeMaps/stdnt_degree_maps_list.jsp" target="_blank">https://pub.brooklyn.edu//DegreeMaps/stdn_view_degree_map.jsp</a></p1>
+        <p> Offical website: <a href="https://www.brooklyn.edu/" target="_blank">https://www.brooklyn.edu/</a></p>
+        <p> Degree map link for Brooklyn College - <a href="https://pub.brooklyn.edu//DegreeMaps/stdnt_degree_maps_list.jsp" target="_blank">https://pub.brooklyn.edu//DegreeMaps/stdn_view_degree_map.jsp</a></p>
         <img src="https://img001.prntscr.com/file/img001/zRNlIi1YQhuENwr-Xk-kfQ.png" alt="Degree Map for Computer Science @ Brooklyn College" class="my-image">
 
         <div class="black-box">

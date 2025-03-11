@@ -82,23 +82,42 @@
 
         <div class="image-container">
             <img src="https://tinyurl.com/4yyw3trh" alt="Brooklyn college" class="main-image">
-            <div class="text-overlay"> PathFinder </div>
+            <div class="text-overlay"> This picture swap different ones every couple seconds </div>
         </div>
 
-        <p> Enter your County to get started </p>
+        <p id = "searchText">Search by County</p>
         <div class="search-container">
             <form action="SQL" method="get">
                 <input type="text" class="search-bar" placeholder="Name of the county (WIP)" name="WIP" query="WIP">
             </form>
         </div>
-        <p>Look up by college or university by name instead <br> The above line will be switchable with the search bar</p>
+        <p id = "otherText" onclick="changeText()">Search by College or University name instead</p>
+        <script>
+            function changeText(){
+                var textElement = document.getElementById("searchText")
+                var underTextElement = document.getElementById("otherText")
+                if (textElement.innerHTML === 'Search by County'){
+                    textElement.innerHTML = 'Search by College or University name';
+                    underTextElement.innerHTML = 'Search by County name instead';
+                }
+                else if (textElement.innerHTML === 'Search by College or University name'){
+                    textElement.innerHTML = 'Search by County';
+                    underTextElement.innerHTML = 'Search by College or University name instead';
+                }
+            }
+        </script>
 
-        <p> Offical website: <a href="https://www.brooklyn.edu/" target="_blank">https://www.brooklyn.edu/</a></p>
-        <p> Degree map link for Brooklyn College - <a href="https://pub.brooklyn.edu//DegreeMaps/stdnt_degree_maps_list.jsp" target="_blank">https://pub.brooklyn.edu//DegreeMaps/stdn_view_degree_map.jsp</a></p>
+        <p1>List of <a href = "file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/County.html" target="_blank">Counties</a></p1>
+        <p1><br>List of Colleges & Universities</p1>
+        <p1><br>This will be placed to the right for the text above</p1>
+        <p1><br>To find what county you belong to, <a href="https://myzipcode.net/county-lookup" target="_blank">click here</a></p1>
+
+        <p> (Temporary placement)Offical website: <a href="https://www.brooklyn.edu/" target="_blank">https://www.brooklyn.edu/</a></p>
+        <p> (Temporary placement)Degree map link for Brooklyn College - <a href="https://pub.brooklyn.edu//DegreeMaps/stdnt_degree_maps_list.jsp" target="_blank">https://pub.brooklyn.edu//DegreeMaps/stdn_view_degree_map.jsp</a></p>
         <img src="https://img001.prntscr.com/file/img001/zRNlIi1YQhuENwr-Xk-kfQ.png" alt="Degree Map for Computer Science @ Brooklyn College" class="my-image">
 
         <div class="black-box">
-            <p style="color: white; text-align: center; padding: 10px;"> Help - Site Guidelines - etc (all the other legal stuff)</p>
+            <p style= "color:white; text-align: center; padding: 10px;"> Help - Site Guidelines - etc (all the other legal stuff)</p>
         </div>
     </body>
 </html>

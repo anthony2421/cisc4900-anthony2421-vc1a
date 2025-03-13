@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pathfinder </title>
+        <style>
+            h1 { /*Header*/
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 36px;
+                color: rgb(20,20,20);
+                text-align: center;
+                font-weight: bold;
+            }
+            p{ /*Center text*/
+                text-align: center;
+                font-size: 24px;
+                color:rgb(0, 0, 0);
+            }
+            p1{ /*regular text*/
+                text-align: center;
+                font-size: 24px;
+                color:black;
+                padding-top: 50px;
+            }
+            .image-container{ /*image size*/
+                text-align: center;
+                align-items: center;
+                margin-top: 25px;
+            }
+            .main-image { /*main image*/
+                text-align: center;
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            .my-image{ /*other image size*/
+                padding-left: 250px;
+                text-align:right;
+                width: 100%;
+                max-width: 500px;
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> PathFinder </h1>
+        <p> Here you will find the all of the available Counties in New York! (WIP)</p>
+        <div class="image-container">
+            <img id = "image" src = "https://th.bing.com/th/id/R.f0f2d37d318f07e9cfbff683f91d9016?rik=qV6vo%2bFS2sixIg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2678%2f4307267683_b5a2026955_z.jpg&ehk=GFYW%2fN5Yw2Dq7dQL5xT8xdNbnGxFXaVOnLxEBAy1jLY%3d&risl=&pid=ImgRaw&r=0" alt = "image">
+            <div class="text-overlay">Implement left and right arrows to change image, place into main page html</div>
+        </div>
+
+        <p1><br>This will be placed to the right for the text above</p1>
+        <p1><br>To find what county you belong to, <a href="https://myzipcode.net/county-lookup" target="_blank">click here</a></p1>
+        
+        <p>List of Counties</p>
+        <p1><a href="file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/King's County/king's_county.html" target="_blank">King's County</a></p1>
+    </body>
+</html>

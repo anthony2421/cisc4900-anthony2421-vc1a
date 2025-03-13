@@ -81,8 +81,13 @@
         <p> Here you will find the compiled Majors and Minors of the current CUNYs (soon to be expanded)! </p>
 
         <div class="image-container">
+<<<<<<< HEAD
             <img id = "image" src = "https://th.bing.com/th/id/R.f0f2d37d318f07e9cfbff683f91d9016?rik=qV6vo%2bFS2sixIg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2678%2f4307267683_b5a2026955_z.jpg&ehk=GFYW%2fN5Yw2Dq7dQL5xT8xdNbnGxFXaVOnLxEBAy1jLY%3d&risl=&pid=ImgRaw&r=0" alt = "image">
             <div class="p1">Implement left and right arrows to change image, place into main page html</div>
+=======
+            <img src="https://tinyurl.com/4yyw3trh" alt="Brooklyn college" class="main-image">
+            <div class="text-overlay"> This picture swap different ones every couple seconds </div>
+>>>>>>> ed9d093cb2789fe296c736cb8b7f3cdbe1d59f08
         </div>
         <script>
             const images = [
@@ -129,10 +134,19 @@
             }
         </script>
 
+<<<<<<< HEAD
         <p><br>List of <a href = "file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/County.html" target="_blank">Counties</a></p1>
         <p>List of Colleges & Universities</p1>
     
         <p> <br>(Temporary placement)Offical website: <a href="https://www.brooklyn.edu/" target="_blank">https://www.brooklyn.edu/</a></p>
+=======
+        <p1>List of <a href = "file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/County.html" target="_blank">Counties</a></p1>
+        <p1><br>List of Colleges & Universities</p1>
+        <p1><br>This will be placed to the right for the text above</p1>
+        <p1><br>To find what county you belong to, <a href="https://myzipcode.net/county-lookup" target="_blank">click here</a></p1>
+
+        <p> (Temporary placement)Offical website: <a href="https://www.brooklyn.edu/" target="_blank">https://www.brooklyn.edu/</a></p>
+>>>>>>> ed9d093cb2789fe296c736cb8b7f3cdbe1d59f08
         <p> (Temporary placement)Degree map link for Brooklyn College - <a href="https://pub.brooklyn.edu//DegreeMaps/stdnt_degree_maps_list.jsp" target="_blank">https://pub.brooklyn.edu//DegreeMaps/stdn_view_degree_map.jsp</a></p>
         <img src="https://img001.prntscr.com/file/img001/zRNlIi1YQhuENwr-Xk-kfQ.png" alt="Degree Map for Computer Science @ Brooklyn College" class="my-image">
 

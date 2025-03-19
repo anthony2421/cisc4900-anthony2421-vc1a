@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Pathfinder </title>
+        <title> Counties </title>
         <style>
             h1 { /*Header*/
                 font-family: Arial, Helvetica, sans-serif;
@@ -42,6 +42,12 @@
                 max-width: 500px;
                 height: 500px;
             }
+            .black-box { /*Bottom black box for legal inquiries*/
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
         </style>
     </head>
     <body>
@@ -49,13 +55,73 @@
         <p> Here you will find the all of the available Counties in New York! (WIP)</p>
         <div class="image-container">
             <img id = "image" src = "https://th.bing.com/th/id/R.f0f2d37d318f07e9cfbff683f91d9016?rik=qV6vo%2bFS2sixIg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2678%2f4307267683_b5a2026955_z.jpg&ehk=GFYW%2fN5Yw2Dq7dQL5xT8xdNbnGxFXaVOnLxEBAy1jLY%3d&risl=&pid=ImgRaw&r=0" alt = "image">
-            <div class="text-overlay">Implement left and right arrows to change image, place into main page html</div>
+            <div class="p1">Implement left and right arrows to change image, place into main page html</div>
         </div>
+        <script>
+            const images = [
+                "https://th.bing.com/th/id/R.f0f2d37d318f07e9cfbff683f91d9016?rik=qV6vo%2bFS2sixIg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2678%2f4307267683_b5a2026955_z.jpg&ehk=GFYW%2fN5Yw2Dq7dQL5xT8xdNbnGxFXaVOnLxEBAy1jLY%3d&risl=&pid=ImgRaw&r=0",
+                "https://s3e8p5g8.delivery.rocketcdn.me/wp-content/uploads/2020/11/cuny_bernard_m_baruch_college_college3.jpg",
+                "https://th.bing.com/th/id/R.9b033db9f27de43b5a43d39b8eeca41a?rik=gDjRcc9vD4a9gA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-McDvzXufEB8%2fT0_nKTpYSKI%2fAAAAAAAACjA%2fIj_Jjrjo6Qs%2fs1600%2fhunter4.jpg&ehk=EzbrOcPEVH9axcf%2fdfAM%2f9gWK75VHkz%2fKOqBlxyITJE%3d&risl=&pid=ImgRaw&r=0"
+            ];
+            let current = 0;
+            let timer = 0;
+            function changeImage(){
+                current = (current + 1) % images.length;
+                document.getElementById("image").src = images[current];
+            }   
+            function resetTimer(){
+                clearInterval(timer);
+                timer = setInterval(changeImage, 5000);
+            }
+            setInterval(changeImage, 5000)
+            document.getElementById("image").addEventListener("click", function() {
+                changeImage();
+                resetTimer();
+            });
+        </script>
 
-        <p1><br>This will be placed to the right for the text above</p1>
         <p1><br>To find what county you belong to, <a href="https://myzipcode.net/county-lookup" target="_blank">click here</a></p1>
+        <p style="text-align: right;"><br>A county: is a political and administrative division of a state, providing certain local governmental services</p>
+
+        <p style="text-align: center;">List of Counties</p>
+        <p style="text-align: left;">Bronx County (Bronx)<br></p>
+        <p style="text-align: left; padding-left: 25px;">- Bronx Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- Hostos Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- Lehman College</p>
+
+        <p style="text-align: left;"><br><a href="file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/King's County/king's_county.html" target="_blank">King's County</a> (Brooklyn)<br></p>
+        <p style="text-align: left; padding-left: 25px;">- <a href="C:\Users\antho\cisc4900-anthony2421-vc1a\Web browser documents\County\King's County\Brooklyn College\BC.html" target="_blank">Brooklyn College</a></p> 
+        <p style="text-align: left; padding-left: 25px;">- Kingsborough Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- Medgar Evers College</p>
+        <p style="text-align: left; padding-left: 25px;">- New York City College of Technology</p> 
+
+        <p style="text-align: left;"><br>New York County (Manhattan)<br></p>
+        <p style="text-align: left; padding-left: 25px;">- Baruch College</p>
+        <p style="text-align: left; padding-left: 25px;">- Borough of Manhatten Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- Craig Newmark Graduate School of Journalism at CUNY</p>
+        <p style="text-align: left; padding-left: 25px;">- Cuny Graduate Center</p>
+        <p style="text-align: left; padding-left: 25px;">- Cuny Graduate School of Public Health and Health Policy</p>
+        <p style="text-align: left; padding-left: 25px;">- CUNY School of Labor and Urban Studies</p> 
+        <p style="text-align: left; padding-left: 25px;">- CUNY School of Professional Studies</p>
+        <p style="text-align: left; padding-left: 25px;">- Guttman Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- Hunter College</p>
+        <p style="text-align: left; padding-left: 25px;">- John Jay College of Criminal Justice</p>
+        <p style="text-align: left; padding-left: 25px;">- MaCaulay Honors College</p>
+        <p style="text-align: left; padding-left: 25px;">- The City College of New York</p>
+
+
+        <p style="text-align: left;"><br>Queens County (Queens)<br></p>
+        <p style="text-align: left; padding-left: 25px;">- CUNY School of Law</p>
+        <p style="text-align: left; padding-left: 25px;">- LaGuardia Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- Queens College</p>
+        <p style="text-align: left; padding-left: 25px;">- Queensborough Community College</p> 
+        <p style="text-align: left; padding-left: 25px;">- York College</p>
         
-        <p>List of Counties</p>
-        <p1><a href="file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/King's County/king's_county.html" target="_blank">King's County</a></p1>
+        <p style="text-align: left;"><br>Richmond County (Staten Island)<br></p>
+        <p style="text-align: left; padding-left: 25px; padding-bottom: 50px;">- College of Staten Island</p> 
+
+        <div class="black-box">
+            <p style= "color:white; text-align: center; padding: 10px;"> Help - Site Guidelines - etc (all the other legal stuff)</p>
+        </div>
     </body>
 </html>

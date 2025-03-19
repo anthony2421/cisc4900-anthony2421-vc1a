@@ -1,8 +1,8 @@
 Current tasks to do
-- Fix interactable links and text
-- Finish Counties website/list
-- Set up prototype College/Universitie page & selected pathway page
+- Fix positioning of text
+- Fix image container
+- Research back-end interactions
 
 Future tasks
-- Start data scraping
-- Wind and Chimes after connecting via querying
+- Create back-end (hopefully end of this week)
+- Change directorie by using database connection

@@ -28,25 +28,44 @@
                 align-items: center;
                 margin-top: 25px;
             }
-            .main-image { /*main image*/
-                text-align: center;
-                width: 100%;
-                max-width: 500px;
-                height: auto;
-                margin-bottom: 20px;
+            .image-container img{
+                width: 1200px;
+                height: 800px;
+                object-fit: cover;
             }
-            .my-image{ /*other image size*/
-                padding-left: 250px;
-                text-align:right;
+            .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            }
+            .left-arrow{
+                left: 10px;
+            }
+            .right-arrow{
+                right: 10px;
+            }
+            .textaligner{
+                display: flex;
+                justify-content: space-between;
                 width: 100%;
-                max-width: 500px;
-                height: 500px;
+            }
+            .textbox {
+                width: 600px;
+                height: 150px;
+                border: 1px solid black;
+                box-sizing: border-box;
             }
             .black-box { /*Bottom black box for legal inquiries*/
                 background-color: black;
                 color: white;
                 text-align: center;
-                padding: 10px 0;
+                padding: 10px;
             }
         </style>
     </head>
@@ -54,8 +73,9 @@
         <h1> PathFinder </h1>
         <p> Here you will find the all of the available Counties in New York! (WIP)</p>
         <div class="image-container">
+            <button class = "arrow left-arrow" onclick = "prevImage()">&#10094</button>
             <img id = "image" src = "https://th.bing.com/th/id/R.f0f2d37d318f07e9cfbff683f91d9016?rik=qV6vo%2bFS2sixIg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2678%2f4307267683_b5a2026955_z.jpg&ehk=GFYW%2fN5Yw2Dq7dQL5xT8xdNbnGxFXaVOnLxEBAy1jLY%3d&risl=&pid=ImgRaw&r=0" alt = "image">
-            <div class="p1">Implement left and right arrows to change image, place into main page html</div>
+            <button class = "arrow right-arrow" onclick = "nextImage()">&#10095</button>
         </div>
         <script>
             const images = [
@@ -73,15 +93,23 @@
                 clearInterval(timer);
                 timer = setInterval(changeImage, 5000);
             }
-            setInterval(changeImage, 5000)
-            document.getElementById("image").addEventListener("click", function() {
+            function prevImage(){
+                current = (current - 1 + images.length) % images.length
+                document.getElementById("image").src = images[current];
+                resetTimer();
+            }
+            function nextImage(){
                 changeImage();
                 resetTimer();
-            });
+            }
+            timer = setInterval(changeImage, 5000)
         </script>
-
-        <p1><br>To find what county you belong to, <a href="https://myzipcode.net/county-lookup" target="_blank">click here</a></p1>
-        <p style="text-align: right;"><br>A county: is a political and administrative division of a state, providing certain local governmental services</p>
+        <div class="textaligner">
+            <p style="text-align: left;"><br>To find what county you belong to, <a href="https://myzipcode.net/county-lookup" target="_blank">click here</a></p1>
+            <div class="textbox">
+            <p style="text-align: right; padding-left: 100px;"><br>A <a href="https://dictionary.cambridge.org/us/dictionary/english/county" target="_blank">county</a>: is a political and administrative division of a state, providing certain local governmental services</p>
+            </div>
+        </div>
 
         <p style="text-align: center;">List of Counties</p>
         <p style="text-align: left;">Bronx County (Bronx)<br></p>
@@ -91,7 +119,7 @@
 
         <p style="text-align: left;"><br><a href="file:///C:/Users/antho/cisc4900-anthony2421-vc1a/Web%20browser%20documents/County/King's County/king's_county.html" target="_blank">King's County</a> (Brooklyn)<br></p>
         <p style="text-align: left; padding-left: 25px;">- <a href="C:\Users\antho\cisc4900-anthony2421-vc1a\Web browser documents\County\King's County\Brooklyn College\BC.html" target="_blank">Brooklyn College</a></p> 
-        <p style="text-align: left; padding-left: 25px;">- Kingsborough Community College</p>
+        <p style="text-align: left; padding-left: 25px;">- KingsBorough Community College</p>
         <p style="text-align: left; padding-left: 25px;">- Medgar Evers College</p>
         <p style="text-align: left; padding-left: 25px;">- New York City College of Technology</p> 
 

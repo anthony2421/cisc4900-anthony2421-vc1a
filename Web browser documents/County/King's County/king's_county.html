@@ -5,6 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Kings County </title>
         <style>
+            html, body{
+                height:100%;
+                margin: 0;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+            }
             h1 { /*Header*/
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 36px;
@@ -17,25 +25,27 @@
                 font-size: 24px;
                 color:rgb(0, 0, 0);
             }
+            .filler {
+                flex: 1;
+            }
             .black-box { /*Bottom black box for legal inquiries*/
                 background-color: black;
                 color: white;
                 text-align: center;
-                padding: 10px 0;
+                padding: 10px;
             }
         </style>
     </head>
     <body>
         <h1> PathFinder </h1>
         <p> Here you will find the compiled Majors and Minors of the current CUNYs (soon to be expanded)! </p>
-        <div class="image-container">
-           <img src="https://tinyurl.com/4yyw3trh" alt="Brooklyn college" class="main-image">
-               <div class="text-overlay"> PathFinder </div>
-        </div>
 
-        <p1></a>List of Colleges & University in this county</p1>
+        <p></a>List of Colleges & University in this county</p> 
         <p1><br><a href="C:\Users\antho\cisc4900-anthony2421-vc1a\Web browser documents\County\King's County\Brooklyn College\BC.html" target="_blank">Brooklyn College</a></p1>
-    
+        <p1><br>KingsBorough Community College</p1>
+        <p1><br>Medgar Evers College</p1>
+        <p1><br>New York City College of Technology</p1>
+        <div class="filler"></div>
         <div class="black-box">
             <p style= "color:white; text-align: center; padding: 10px;"> Help - Site Guidelines - etc (all the other legal stuff)</p>
         </div>

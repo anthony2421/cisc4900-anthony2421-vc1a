@@ -1,8 +1,6 @@
 Current tasks to do
-- Fix positioning of text
-- Fix image container
-- Research back-end interactions
+- Create back-end using Django
 
 Future tasks
-- Create back-end (hopefully end of this week)
-- Change directorie by using database connection
+- Data scrap all CUNY information
+- Host project via servers then post on public thread(s).

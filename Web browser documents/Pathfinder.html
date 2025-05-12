@@ -29,28 +29,25 @@
             }
             .image-container img{
                 width: 1200px;
-                height: 800px;
+                height: 700px;
                 object-fit: cover;
             }
-            .my-image{ /*other image size*/
-                padding-left: 250px;
-                text-align:right;
-                width: 100%;
-                max-width: 500px;
-                height: 500px;
+            .arrow {
+            position: absolute;
+            top: 75%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            cursor: pointer;
+            border: none;
             }
-            .text-overlay { /*Text ontop of image*/
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: rgb(255, 255, 255);
-                font-size: 24px;
-                font-weight: bold;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-                padding: 10px;
-                text-align: center;
-                margin-top: 50px;
+            .left-arrow{
+                left: 10px;
+            }
+            .right-arrow{
+                right: 10px;
             }
             .search-container{
                 margin-right: auto;
@@ -69,7 +66,7 @@
                 background-color: black;
                 color: white;
                 text-align: center;
-                padding: 10px 0;
+                padding: 10px;
             }
         </style>
     </head>
@@ -78,8 +75,9 @@
         <p> Here you will find the compiled Majors and Minors of the current CUNYs! (soon to be expanded)</p>
 
         <div class="image-container">
+            <button class = "arrow left-arrow" onclick = "prevImage()">&#10094</button>
             <img id = "image" src = "https://th.bing.com/th/id/R.f0f2d37d318f07e9cfbff683f91d9016?rik=qV6vo%2bFS2sixIg&riu=http%3a%2f%2ffarm3.staticflickr.com%2f2678%2f4307267683_b5a2026955_z.jpg&ehk=GFYW%2fN5Yw2Dq7dQL5xT8xdNbnGxFXaVOnLxEBAy1jLY%3d&risl=&pid=ImgRaw&r=0" alt = "image">
-            <div class="p1">Implement left and right arrows to change image, place into main page html</div>
+            <button class = "arrow right-arrow" onclick = "nextImage()">&#10095</button>
         </div>
         <script>
             const images = [
@@ -97,11 +95,16 @@
                 clearInterval(timer);
                 timer = setInterval(changeImage, 5000);
             }
-            setInterval(changeImage, 5000)
-            document.getElementById("image").addEventListener("click", function() {
+            function prevImage(){
+                current = (current - 1 + images.length) % images.length
+                document.getElementById("image").src = images[current];
+                resetTimer();
+            }
+            function nextImage(){
                 changeImage();
                 resetTimer();
-            });
+            }
+            timer = setInterval(changeImage, 5000)
         </script>
 
         <p id = "searchText">Search by County</p>

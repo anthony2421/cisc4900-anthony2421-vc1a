@@ -1,2 +1,4 @@
 This folder will be used to keep track of the data sources used for the project, as well as tools used to control the data.
-This will be done after I get finish the prototypes of the subdomains.
+Using Scrapy for the project
+The result scraped data will be in a .json file
+Later read into the SQLite table

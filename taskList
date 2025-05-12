@@ -1,6 +1,7 @@
 Current tasks to do
-- Create back-end using Django
+- More research on Scrapy or data scraping in general
+- Find a fix around the MapView problem
 
 Future tasks
 - Data scrap all CUNY information
-- Host project via servers then post on public thread(s).
+- Mass input scraped into DB
